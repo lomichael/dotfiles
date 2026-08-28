@@ -1,7 +1,11 @@
 font-family = Commit Mono
-font-size = 14
+font-size = 16
+font-variation = wght=450
 
-theme = Gruvbox Material Dark
+theme = Selenized Light 
+
+minimum-contrast = 1.3
+adjust-cell-height = 25%
 
 window-padding-x = 4
 window-padding-y = 4

@@ -64,13 +64,11 @@ require("lazy").setup({
 
   -- === THEME ===
   {
-    "sainnhe/gruvbox-material",
+    "calind/selenized.nvim",
     priority = 1000,
     config = function()
-      vim.g.gruvbox_material_background = "medium"    -- soft, medium, or hard
-      vim.g.gruvbox_material_foreground = "material"   -- material, mix, or original
-      vim.g.gruvbox_material_better_performance = 1
-      vim.cmd.colorscheme("gruvbox-material")
+      vim.o.background = "light"
+      vim.cmd.colorscheme("selenized")
     end,
   },
 
