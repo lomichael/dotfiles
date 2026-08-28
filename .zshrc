@@ -3,7 +3,7 @@ autoload -Uz vcs_info
 precmd() { vcs_info }
 zstyle ':vcs_info:git:*' formats ' %b'
 setopt PROMPT_SUBST
-PROMPT='%F{blue}%1~%f%F{yellow}${vcs_info_msg_0_}%f %F{gray}->%f '
+PROMPT='%F{blue}%1~%f%F{yellow}${vcs_info_msg_0_}%f %F{green}❯%f '
 
 # history
 HISTSIZE=50000
