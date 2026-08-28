@@ -1,0 +1,14 @@
+font-family = Commit Mono
+font-size = 14
+
+theme = Gruvbox Material Dark
+
+window-padding-x = 4
+window-padding-y = 4
+
+clipboard-read = allow
+clipboard-write = allow
+
+# let tmux own splits/tabs
+keybind = super+d=unbind
+keybind = super+t=unbind
