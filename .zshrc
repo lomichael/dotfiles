@@ -30,3 +30,4 @@ export EDITOR="nvim"
 
 # disable flow control (free up Ctrl-S for tmux)
 stty -ixon
+export PATH="$HOME/.local/bin:$PATH"

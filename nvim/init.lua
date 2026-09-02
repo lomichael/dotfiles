@@ -64,11 +64,13 @@ require("lazy").setup({
 
   -- === THEME ===
   {
-    "calind/selenized.nvim",
+    "catppuccin/nvim",
+    name = "catppuccin",
     priority = 1000,
     config = function()
+      require("catppuccin").setup({ flavour = "latte" })
       vim.o.background = "light"
-      vim.cmd.colorscheme("selenized")
+      vim.cmd.colorscheme("catppuccin")
     end,
   },
 
