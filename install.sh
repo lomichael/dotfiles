@@ -39,12 +39,13 @@ mkdir -p "$(dirname "$settings")"
 
 if command -v jq >/dev/null 2>&1; then
     tmp="$(mktemp)"
-    jq '.statusLine = {"type": "command", "command": "bash ~/.claude/statusline-command.sh"}' "$settings" > "$tmp"
+    jq '.statusLine = {"type": "command", "command": "bash ~/.claude/statusline-command.sh"} | .theme = "light"' "$settings" > "$tmp"
     mv "$tmp" "$settings"
-    echo "ok      $settings (statusLine key set)"
+    echo "ok      $settings (statusLine + theme set)"
 else
     echo "!! jq not found - add this to $settings manually:"
-    echo '   "statusLine": {"type": "command", "command": "bash ~/.claude/statusline-command.sh"}'
+    echo '   "statusLine": {"type": "command", "command": "bash ~/.claude/statusline-command.sh"},'
+    echo '   "theme": "light"'
 fi
 
 echo "==> Installing tmux plugin manager (tpm)"
