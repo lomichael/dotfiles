@@ -12,6 +12,7 @@ HISTFILE=~/.zsh_history
 setopt SHARE_HISTORY
 setopt HIST_IGNORE_DUPS
 
+# aliases
 alias g="git"
 alias gs="git status --short"
 alias gd="git diff"
@@ -24,10 +25,11 @@ alias c="clear"
 alias ..="cd .."
 alias ...="cd ../.."
 
-# PATH
+# PATH & environment
 export PATH="$HOME/.npm-global/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 export EDITOR="nvim"
 
+# terminal behavior
 # disable flow control (free up Ctrl-S for tmux)
 stty -ixon
-export PATH="$HOME/.local/bin:$PATH"
