@@ -29,6 +29,7 @@ alias ...="cd ../.."
 export PATH="$HOME/.npm-global/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export EDITOR="nvim"
+export CLICOLOR=1
 
 # terminal behavior
 # disable flow control (free up Ctrl-S for tmux)
